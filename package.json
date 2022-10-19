@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "server": "nodemon server/server.js",
     "dev": "concurrently \"npm start\" \"nodemon server/server.js\"",
     "start": "webpack-dev-server --hot --open",
     "build": "webpack --config webpack.config.js --mode production"
@@ -16,6 +17,7 @@
     "@babel/preset-env": "^7.19.4",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^8.2.5",
+    "colors": "^1.4.0",
     "concurrently": "^7.4.0",
     "css-loader": "^6.7.1",
     "dotenv": "^16.0.3",
@@ -32,6 +34,8 @@
     "webpack-dev-server": "^4.11.1"
   },
   "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-plugin-react": "^7.31.10",
     "nodemon": "^2.0.20"
   }
 }

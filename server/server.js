@@ -1,10 +1,15 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const colors = require('colors');
+const dotenv = require('dotenv').config();
+const connectDB = require('./config/db')
 const express = require('express');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+connectDB()
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
