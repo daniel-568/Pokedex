@@ -4,13 +4,12 @@ const path = require('path');
 const express = require('express');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }))
 
-app.get('/api', (req, res) => {
-    return res.status(200).json({message: 'hello world'});
-});
+app.use('/api/pokemon', require('./routes/pokemonRoutes'))
 
 app.use((err, req, res, next) => {
     const defaultErr = {
