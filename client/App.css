@@ -1,3 +1,67 @@
-.wow {
-    color: pink;
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+.app {
+    display: grid;
 }
+
+/* #navButtons {
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    border: solid 1px black;
+    display: inline-block;
+} */
+
+body{
+    background: rgb(59, 76, 202)
+}
+
+.pokemon {
+    display: flex;
+    box-sizing: border-box;
+    border: solid 1px rgb(210, 50, 50);
+    background-color: rgb(255, 222, 0);
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+.buttons {
+    background-color: rgb(192, 171, 34);
+    color: rgb(210, 50, 50);
+    font-family: 'Pokemon Solid', sans-serif;
+    cursor: pointer;
+    border: solid 1px rgb(210, 50, 50);
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navButtons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pokemonFeed {
+    display: grid;
+    box-sizing: border-box;
+    margin: 0px;
+    grid-template-columns: repeat(8, minmax(100px, 1fr));
+}
+
+/* #addButton {
+    background-color: rgb(192, 171, 34);
+    color: rgb(210, 50, 50);
+    font-family: 'Pokemon Solid', sans-serif;
+} */
+
+/* #logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */

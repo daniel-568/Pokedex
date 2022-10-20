@@ -19,10 +19,20 @@ import MainContainer from './containers/MainContainer'
 // }
 
 const App = () => (
-    <div>
+    <div className='app'>
+      <img id='logo' src='https://seeklogo.com/images/P/Pokemon-logo-497D61B223-seeklogo.com.png' />
       <MainContainer />
-      <h1 className='wow'>Hello World</h1>
     </div>
 );
 
 export default App;
+
+// <h1 className='wow'>Hello World</h1>
+
+// <link type='image' href='./assets/Pokemon-Logo.png'/>
+
+// <link type='image' type='image' href='./assets/Pokemon-Logo.png'/>
+
+// <img src = './assets/Pokemon-Logo.png'/>
+
+// <link rel="stylesheet" type="text/css" href="styles.css" />

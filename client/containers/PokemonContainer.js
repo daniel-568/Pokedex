@@ -23,10 +23,10 @@ class PokemonContainer extends Component {
         fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
         .then((data) => data.json())
         .then((data) => {
-            let random = this.state.pokemonUrls.slice();
-            random.push(data)
+            let pokemonArray = this.state.pokemonUrls.slice();
+            pokemonArray.push(data)
             this.setState({
-                pokemonUrls: random,
+                pokemonUrls: pokemonArray,
             })
         })
         .catch((err) => {
