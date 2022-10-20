@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 
 // const Pokemon = () => {
 //     <div>
@@ -14,15 +14,17 @@ class Pokemon extends Component {
         return (
             <div className='pokemon'>
                 <p>{(this.props.data.name).toUpperCase()}</p>
-                <p>Types: {this.props.types}</p>
                 <img src = {this.props.data.sprites.front_default}/>
                 <button className='buttons' onClick = {(e) => {
-                    axios.put('http://localhost:8080/api/pokemon', this.props.data.id);
+                    console.log('get request')
                 }}>Add to My Pokemon</button>
             </div>
         )
     }
 }
+
+// axios.put(`http://localhost:8080/api/pokemon/${this.props.data.id}`, {this.props.data.name, this.props.front_default});
+// <p>Types: {this.props.types}</p>
 
 // style={styles.container} 
 // const styles = {
