@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 import Nav from '../Nav'
-import FeedContainer from './FeedContainer'
+import PokemonContainer from './PokemonContainer'
 
 const MainContainer = () => (
     <div>
-        <FeedContainer />
         <Nav />
+        <PokemonContainer />
     </div>
 )
 
